@@ -1,7 +1,7 @@
 import React from "react";
 import { View, TouchableOpacity, StyleSheet, Text, Image } from "react-native";
 
-export default function Jogos({titulo, valor, imagem}){
+export default function ProximosLancamentos({titulo, data, imagem}){
     return(
         <TouchableOpacity style={estilo.containerJogos}>
             <Image
@@ -10,40 +10,39 @@ export default function Jogos({titulo, valor, imagem}){
             />
 
             <Text style={estilo.titulo}>{titulo}</Text>
-            <Text style={estilo.valor}>{valor}</Text>
+            <Text style={estilo.data}>{data}</Text>
         </TouchableOpacity>
     );
 }
 
 const estilo = StyleSheet.create({
     containerJogos: {
-        backgroundColor: "#DCDCDC",
         borderRadius: 10,
         marginTop: 8,
         padding: 10,
         margin: 2,
         alignItems: "center",
         justifyContent: "space-between",
-        width: 100,
-        height: 150,
-        marginLeft: 8,
-        marginBottom: -200
+        width: 300,
+        height: 200,
+        marginLeft: 8
     },
     titulo: {
         color: "black",
         fontSize: 12,
         fontWeight: "bold"
     },
-    valor: {
+    data: {
+        alignItems: "right",
         color: "green",
         fontSize: 12,
-        marginLeft: 29,
+        marginLeft: 200,
         marginTop: 2,
         fontWeight: "bold"
     },
     images: {
         width: "100%",
-        height: 75,
-        borderRadius: 3
+        height: "100%",
+        borderRadius: 25
     }
 });

@@ -28,6 +28,37 @@ const JOGOS = [
         nome: "Dragon Ball Fight",
         valor: "R$18,00",
         imagem: "dbz.jpg"
-    }
+    },
+    {
+        id: "06",
+        nome: "Pou",
+        valor:  "Gratuito",
+        imagem: "pou.webp"
+    },
+    {
+        id: "07",
+        nome: "Temple Run",
+        valor:  "R$5.00",
+        imagem: "TempleRun.jpg"
+    },
+    {
+        id: "08",
+        nome: "Temple Run 2",
+        valor:  "R$5.32",
+        imagem: "TempleRun2.jpg"
+    },
+    {
+        id: "09",
+        nome: "Clash Royale",
+        valor:  "Gratuito",
+        imagem: "ClashRoyale.jpg"
+    },
+    {
+        id: "10",
+        nome: "Angry Birds",
+        valor:  "R$100.50",
+        imagem: "angrybirds.png"
+    },
+
 ]
 export default JOGOS;
